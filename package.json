@@ -1,0 +1,24 @@
+{
+  "name": "reppi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorhugoRUB/RepPI.git"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorhugoRUB/RepPI/issues"
+  },
+  "homepage": "https://github.com/victorhugoRUB/RepPI#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
