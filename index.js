@@ -21,10 +21,13 @@ function paginaInicial(req, res){
 
 function gerarPaginaTabuada(req, res){
     try{
-        const numero = Number(req.query.numero);
-        const qnt = Number(req.query.sequencia);
-        if(isNaN(numero) || isNaN(qnt)){
+        let numero = Number(req.query.numero);
+        let qnt = Number(req.query.sequencia);
+        if(isNaN(numero)){
             throw new Error('ERRO [400] - Os valores informados não são números válidos')
+        }
+        if(isNaN(qnt)){
+            qnt = 10;
         }
         let conteudoResposta = `
         <!DOCTYPE html>
